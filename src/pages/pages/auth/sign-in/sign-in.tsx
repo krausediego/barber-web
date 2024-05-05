@@ -20,7 +20,7 @@ export function AuthSignInPage() {
   const { mutateAsync: signInFn, isPending: isLoading } = useMutation({
     mutationFn: signInService,
     onSuccess: () => {
-      // navigate("/");
+      navigate("/");
     },
   });
 
