@@ -1,3 +1,4 @@
+import { CompanyProfileTypeSchema } from "@/components/company-profile-dialog";
 import { SpecialtyTypes } from "..";
 
 export interface Company {
@@ -10,3 +11,7 @@ export interface Company {
   createdAt: Date;
   updatedAt?: Date;
 }
+
+export type updateCompanyProps = CompanyProfileTypeSchema & {
+  id: string;
+};
